@@ -1,0 +1,21 @@
+# --index-url https://download.pytorch.org/whl/cu118
+torch
+transformers
+notebook
+scikit-learn
+numpy==1.26.4
+matplotlib
+pandas
+seaborn
+tqdm
+openpyxl
+python-box
+scikit-learn
+huggingface_hub
+ipywidgets
+jupyter
+protobuf
+types-PyYAML
+ensure==1.0.2
+
+-e .

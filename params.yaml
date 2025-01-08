@@ -1,0 +1,7 @@
+test_split: 0.14
+threshold: 0.5
+num_folds: 5
+batch_size: 16
+lr: 0.00002
+num_epochs: 50
+dropout: 0.3

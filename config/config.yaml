@@ -1,0 +1,30 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  zip_file_path: artifacts/data_ingestion/data 1.zip
+
+data_validation:
+  root_dir: artifacts/data_validation
+  dataset_folder: artifacts/data_ingestion/Data/dataset-source-codes
+  dataset_xlsx: artifacts/data_ingestion/Data/CodeAid Source Codes Labeling.xlsx
+  STATUS_FILE: artifacts/data_validation/status.txt
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  dataset_folder: artifacts/data_ingestion/Data/dataset-source-codes
+  dataset_xlsx: artifacts/data_ingestion/Data/CodeAid Source Codes Labeling.xlsx
+  train_dataset: artifacts/data_transformation/train_data.csv
+  test_dataset: artifacts/data_transformation/test_data.csv
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  train_data: artifacts/data_transformation/train_data.csv
+  models: artifacts/model_trainer/models
+  stats: artifacts/model_trainer/stats
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  test_data: artifacts/data_transformation/test_data.csv
+  models: artifacts/model_trainer/models
+  eval_stats: artifacts/model_evaluation/eval_stats
